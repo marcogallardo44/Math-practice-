@@ -1,0 +1,46 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+
+using namespace std;
+
+
+
+int main()
+{
+	int i;
+	int j;
+	int imax;
+	int jmax;
+
+	cout << "please input width then length: ";
+	cin >> imax >> jmax;
+
+	for (i = 1; i <= imax; i++)
+	{
+		for (j = 1; j <= jmax; j++)
+		{
+			if (((i + j) % 2) == 0)
+			{
+				cout << "*";
+			}
+			else
+			{
+				cout << " ";
+			}
+		}
+		cout << endl;
+	}
+
+
+
+
+
+	system("pause");
+	return 0;
+}
+
